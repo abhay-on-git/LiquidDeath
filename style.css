@@ -1,0 +1,636 @@
+
+@font-face {
+    font-family: morganite;
+    src: url(./Morganite-Bold.ttf);
+}
+
+:root{
+
+    /* Light-Theme */
+    --body-color: #FAFAFA;
+    --font-color:black;
+    --border-Color:#020202;
+    --default-color:#fff;
+    
+}
+
+.dark-theme{
+    --body-color: #020202;
+    --font-color:#ffffff;
+    --border-Color:#FAFAFA;
+   
+    --default-color:#000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: var(--body-color); */
+}
+.info{
+    padding: 0 4vmax;
+    padding-top: 5vmax;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 25vmax;
+    overflow: hidden;
+    font-family: 'Clash Display';
+    transition: all 0.4s ease;
+}
+.infoin{
+    position: relative;
+    padding: 1vmax;
+    border-radius: 10px;
+    background-color: var(--body-color);
+}
+.infoh1s{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.infoh1s h3{
+    font-weight: 500;
+    margin-bottom: 1vmax;
+}
+.info h1{
+    font-size: 15vmax;
+    line-height: 13vmax;
+    font-family: morganite;
+    text-transform: uppercase;
+}
+.infop1{
+    width: 100%;
+    padding: 0 1vmax;
+    /* height: 4vmax; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.infop1 h2{
+    align-self: flex-end;
+    font-size: 1.3vmax;
+    font-weight: 500;
+}
+.infop1 .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vmax;
+}
+.infop1 .socials h2{
+    font-size: 1.7vmax;
+}
+.infop1 .icons{
+    /* width: 10vmax; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.9vmax;
+    font-size: 1.5vmax;
+    height: 100%;
+}
+.infop1 .icons a{
+    text-decoration: none;
+    color: var(--body-color);
+}
+.pg1{
+    position: relative;
+    padding: 0 4vmax;
+    padding-bottom: 4vmax;
+    width: 100%;
+    color: var(--font-color);
+}
+nav{
+    position: fixed;
+    z-index: 999999;
+    left:0% ;
+    top: 0%;
+    padding: 1vmax 4vmax;
+    width: 100%;
+    height: 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    color: var(--font-color);
+}
+.logo{
+    width: 7vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+#svg{
+    fill: var(--font-color);
+}
+.menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.menu .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.menu .icons i{
+    font-size: 1.2vmax;
+    position: absolute;
+    cursor: pointer;
+}
+#light{
+    opacity: 0;
+}
+.selfBtn {
+    font-family: 'Clash Display';
+    text-transform: uppercase;
+    font-size:13px;
+    border: 0.5px solid var(--border-Color);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pg1Content{
+    padding-top: 6vmax;
+    margin-bottom: 4vmax;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    /* background-color: red; */
+}
+.pg1headings{
+    text-align: center;
+    width: 100%;
+    align-self: flex-end;
+    /* height: 100%; */
+    /* background-color: rgb(54, 40, 40); */
+}
+.pg1Content h1{
+    width: 100%;
+    font-family:  morganite;
+    font-size: 22vmax;
+    line-height: 17vmax;
+    text-transform: uppercase;
+    font-stretch: ultra-condensed;
+    /* background-color: rgb(   168, 97, 97); */
+}
+
+.videoContainer{
+    position: relative;
+    border-radius: 55px;
+    width: 100%;
+    overflow: hidden;
+    /* background: #000; */
+}
+.videoContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .pg2 styles here.... */
+.pg2{
+    position: relative;
+    padding: 2vmax 4vmax;
+    width: 100%;
+    color: var(--font-color);
+    /* background-color: red; */
+}
+.pg2p1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+.pg2p1 h1{
+    font-size: 15vmax;
+    line-height: 12vmax;
+    text-transform: uppercase;
+    font-family: morganite;
+}
+.pg2p1 h2{
+    font-size: 1.5vmax;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Clash Display';
+}
+.relax{
+    width: auto ;
+    height: auto;
+    /* background-color: red; */
+}
+.captain{
+    position: absolute;
+    height: 60vmax;
+    gap: 5vmax;
+    display: flex;
+    margin-top: 35vmax;
+    overflow: hidden;
+    /* background-color: var(--body-color); */
+    color: var(--font-color);
+    /* background-color: salmon; */
+}
+.captain img{
+    width: 20vmax;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.captainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2vmax;
+    /* background-color: red; */
+}
+.captainContent h1{
+    font-size: 6vmax;
+    line-height: 5vmax;
+}
+.captainContent h2{
+    font-size: 1.2vmax;
+    font-weight: 400;
+    /* line-height: 5vmax; */
+}
+.liquidMen{
+    padding-left: 2vmax;
+    width: auto;
+    height: 60vmax;
+    gap: 10vmax;
+    display: flex;
+    overflow: hidden;
+    /* background-color: rgb(101, 81, 81); */
+}
+.liquidMenContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2vmax;
+    /* background-color: rgb(139, 139, 54); */
+}
+.liquidMen h1{
+    font-size: 6vmax;
+    line-height: 5vmax;
+}
+.liquidMen h2{
+    font-size: 1.2vmax;
+    font-weight: 400;
+    /* line-height: 5vmax; */
+}
+.liquidMen img{
+    margin-top: 10vmax;
+    width: 20vmax;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: red; */
+}
+
+/* button styles */
+button{
+    width: fit-content;
+    height: 3vw;
+    border: 0.5px solid var(--border-Color);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 100;
+    padding: 1vmax 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: var(--font-color);
+    cursor: pointer;
+    background-color: transparent;
+}
+button h4{
+    font-family: 'Clash Display';
+    font-weight:500;
+    mix-blend-mode:difference;
+}
+button .text{
+    z-index: 9999!important;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    color: var(--body-color);
+}
+button .one{
+    background-color: var(--border-Color);
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    top: 100%;
+}
+button .two{
+    background-color: var(--body-color);
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    top: 100%;
+}
+button .three{
+    background-color: var(--border-Color);
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    top: 100%;
+}
+
+.pg3{
+    width: 100%;
+    height: 100vh;
+}
+
+/* pg4 styles started here */
+
+.pg4{
+    padding: 1vmax 4vmax;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vmax;
+    /* background-color: red; */
+}
+.pg4p1{
+    padding: 4vmax 0;
+    width: 100%;
+    height: 40vmax;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: var(--font-color);
+    /* background-color: yellow; */
+}
+.pg4p1Content{
+    width: 50%;
+    display: flex;
+    padding-top: 6vmax;
+    flex-direction: column;
+    gap: 1vmax;
+}
+.pg4p1 h1{
+    font-size: 6vmax;
+    font-family: morganite;
+}
+.pg4p1 h2{
+    font-size: 1.4vmax;
+    font-weight: 500;
+    font-family: 'Clash Display';
+}
+.pg4p1 p{
+    font-family: 'Clash Display';
+    margin-top: 1vmax;
+    width: 70%;
+    font-size: 0.9vmax;
+}
+.pg4p1 button{
+    margin-top: 3vmax;
+}
+.videodiv{
+    width: 40%;
+    height: 100%;
+}
+.videodiv video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Text styles from here */
+
+.text{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 2vmax;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-color);
+    font-family: morganite;
+    /* background-color: red; */
+    text-transform: uppercase;
+}
+.text h2{
+    font-size: 17vmax;
+    line-height: 14vmax;
+    /* background-color: yellow; */
+}
+.text h1{
+    font-size: 35vmax;
+    line-height: 26vmax;
+    /* background-color: aqua; */
+}
+/* pag5 styles here  */
+
+.pg5{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 5;
+    color: var(--font-color);
+    /* background-color: var(--body-color); */
+}
+.top h1{
+    position: absolute;
+    left: 50%;
+    top: 102%;
+    transform: translate(-50%,-50%);
+    width: 90vmax;
+}
+.bottom h1{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%,-50%);
+    width: 90vmax;
+}
+.top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background-color: var(--default-color);
+}
+
+.bottom{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--default-color);
+}
+#canvasContainer{
+    position: relative;
+    width: 100%;
+    height: 700vh;
+}
+#canvasContainerIn{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.beforefooter{
+    padding-top: 28vmax;
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    text-transform: uppercase;
+    color: var(--font-color);
+    /* background-color: red; */
+}
+.beforefooter h2{
+    font-family: morganite;
+    font-size: 15vmax;
+    line-height: 12vmax;
+    /* background-color: yellow; */
+}
+.beforefooter h1{
+    font-family: morganite;
+    font-size: 25vmax;
+    line-height: 20vmax;
+    /* background-color: yellow; */
+}
+.beforefooter button {
+    margin-top: 2vmax;
+}
+footer{
+    padding: 0 4vmax;
+    width: 100%;
+    height: 4vmax;
+    display: flex;
+    align-items: center;
+    font-family: 'Clash Display';
+    justify-content: space-between;
+}
+.f1{
+    font-size: 1.2vmax;
+    color: var(--font-color);
+}
+.f2 a{
+    margin-right: 8px;
+    font-size: 1.3vmax;
+    gap: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--font-color);
+}
+.f2 a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* magnet h1s styling */
+
+.magnet h1{
+    transition: all 0.3s ease;
+}
+.magnet h1:hover{
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+.magnet h1::selection{
+    background-color: transparent;
+}
+
+/* cursor */
+
+.cursor{
+    position: fixed;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    z-index: 9999999999;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+/* loder style started here */
+.loder{
+    z-index: 9999999999;
+    padding: 5vmax;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: var(--font-color);
+    pointer-events: none;
+    background-color: var(--body-color);
+}
+#loderh1{
+    font-size: 15vmax;
+    font-family: 'morganite';
+    letter-spacing: 1vmax;
+    color: var(--font-color);
+
+}
+.loder img{
+    scale: 0.7;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.loder svg{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 20vmax;
+    height: 10vmax;
+}
