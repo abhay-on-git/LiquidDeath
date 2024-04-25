@@ -31,12 +31,14 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 main{
     position: relative;
     width: 100%;
     overflow: hidden;
+    cursor: none;
     /* background-color: var(--body-color); */
 }
 .info{
@@ -332,10 +334,10 @@ button{
 button h4{
     font-family: 'Clash Display';
     font-weight:500;
-    mix-blend-mode:difference;
+    /* mix-blend-mode:difference; */
 }
 button .text{
-    z-index: 9999!important;
+    z-index: 999999!important;
     position: absolute;
     top: 100%;
     display: inline-block;
@@ -347,6 +349,7 @@ button .one{
     height: 150px;
     width: 200px;
     border-radius: 50%;
+    display: inline-block;
     top: 100%;
 }
 button .two{
@@ -355,6 +358,7 @@ button .two{
     height: 150px;
     width: 200px;
     border-radius: 50%;
+    display: inline-block;
     top: 100%;
 }
 button .three{
@@ -363,6 +367,7 @@ button .three{
     height: 150px;
     width: 200px;
     border-radius: 50%;
+    display: inline-block;
     top: 100%;
 }
 
@@ -501,6 +506,7 @@ button .three{
     position: relative;
     width: 100%;
     height: 700vh;
+    background-color: rgb(129, 90, 90);
 }
 #canvasContainerIn{
     position: absolute;
@@ -514,10 +520,10 @@ canvas{
     height: 100%;
 }
 .beforefooter{
-    padding-top: 28vmax;
+    padding-top: 6vmax;
     position: relative;
     width: 100%;
-    height: 140vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -526,7 +532,8 @@ canvas{
     gap: 0;
     text-transform: uppercase;
     color: var(--font-color);
-    /* background-color: red; */
+    /* background-colo
+    r: red; */
 }
 .beforefooter h2{
     font-family: morganite;
@@ -541,7 +548,7 @@ canvas{
     /* background-color: yellow; */
 }
 .beforefooter button {
-    margin-top: 2vmax;
+    margin-top: 1vmax;
 }
 footer{
     padding: 0 4vmax;
@@ -610,7 +617,8 @@ footer{
     justify-content: center; */
     color: var(--font-color);
     pointer-events: none;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    backdrop-filter: contrast(80%) sepia(0%) brightness(90%) blur(70px);
 }
 #loderh1{
     font-size: 15vmax;
@@ -634,3 +642,25 @@ footer{
     width: 20vmax;
     height: 10vmax;
 }
+
+/* @media screen and (min-width: 540px) and (max-width: 1024px) {
+    .cursor {
+        display: none;
+    }
+} */
+
+.afterCanvas{
+    width: 100%;
+    min-height: 100vh;
+}
+.afterCanvas h2{
+    padding-top: 15vmax;
+}
+
+.videoContinerParent{
+    overflow: hidden;
+    width: 100%;
+    padding: 4vmax;
+}
+
+

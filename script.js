@@ -310,21 +310,21 @@ const currentDate = new Date();
          start:'top 70%',
          end:'top 60%',
          ease:'power1.out',
-         scrub:2,
+         scrub:1,
         //  markers:true,
         }
    })
     })
     allh1.forEach((h1)=>{
       gsap.from(h1,{
-        rotateX: 90,
+        rotateX:90,
         scrollTrigger:{
          trigger:h1,
          scroller :'main',
          start:'top 70%',
          end:'top 60%',
          ease:'power1.out',
-         scrub:2,
+         scrub:1,
         //  markers:true,
         }
    })
