@@ -1,6 +1,3 @@
-// AOS initialization
-AOS.init();
-
 function loco(){
   gsap.registerPlugin(ScrollTrigger);
 
@@ -451,5 +448,4 @@ function loderAnimation(){
     opacity:0,
     ease: "power2.out" ,
   },'a')
-  
 }
